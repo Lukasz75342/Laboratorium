@@ -3,3 +3,17 @@ Wielkość pliku - 1GB
 Przepustowość - 250kb/s
 
 Sposób obliczenia:
+1GB= 1073741824 B
+1073741824 B= 10073741824 b
+250kb/s= 250000 b/s
+
+10073741824 b / 250000 b/s = 34359,73837 w przybliżeniu 34360 s
+34360 s / 3600 = 9,54h    (około 9h 32min)
+
+narzut Ethernet/IP/TCP - 4%
+retransmisje - 1%
+9,54 + (9,54 * 5%) = 10,017h   (około 10h 2min)
+
+Wnioski:
+Teoretyczny czas pobierania wynosi około 9h 32min, jednak po uwzględnieniu 
+ewentulanych narzutów Ethernet/IP/TCP oraz retransmisji ten czas wynosi około 10h 2min.
